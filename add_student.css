@@ -1,0 +1,56 @@
+p1{
+	input{
+		background-color:hsl(0, 7%, 14%);
+		text-align:center;
+		color:white;
+		text-align:center;
+		border-radius:10px;
+	}
+}
+#submit{
+    background-color:hsl(0, 7%, 14%);
+    text-align:center;
+    color:white;
+    text-align:center;
+    border-radius:10px;
+    height: 25px;
+    width: 150px;
+}
+
+input{
+	height:20px;
+	width:275px;
+	text-align:left;
+	border-radius:6px;
+	
+}
+h4{
+	color:blue;
+	padding-right:170px;
+}
+html{
+	text-align:center;
+	background-color:lavender;
+}
+.p{
+	padding-right:215px;
+}
+.litia{
+		background-color:lavender;
+}
+form{
+	background-color:white;
+	height:500px;
+	width:350px;
+	align-self:center;
+	border-radius:8px;
+	border-block-end:100px;
+}
+body{
+		display: grid;
+		place-items: center; /* Centers both horizontally and vertically */
+		height: 100vh;
+		margin: 0;
+		background-color: lavender;
+	
+}

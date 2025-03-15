@@ -1,0 +1,25 @@
+p7{
+	input{
+		background-color:blue;
+		text-align:center;
+		color:white;
+		text-align:center;
+	}
+}
+input{
+	height:35px;
+	width:275px;
+	text-align:center;
+}
+h4{
+	color:blue;
+	padding-right:170px;
+}
+html{
+	text-align:center;
+	
+	background-color:lavender;
+}
+.p{
+	padding-right:215px;
+}

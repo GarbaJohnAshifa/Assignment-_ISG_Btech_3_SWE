@@ -1,0 +1,38 @@
+.main-content {
+    display: flex;
+}
+
+.main_dbar{
+    background-color: white;
+    padding: 40px;
+    height: 530px;
+    width: 1000px;
+}
+
+.sidebar{
+    background-color: #151922;
+    padding: 70px;
+    color: aliceblue;
+}
+
+.footer{
+  background-color: black;
+  color: aliceblue;
+  height: 30px;
+  text-align: center;
+}
+
+
+.garba{
+    padding: 5px;
+    box-shadow: 3px 3px 3px 3px rgba(3, 0, 10, 0.1);
+    background-color: rgb(255, 255, 255); 
+    width: 470px;
+  }
+
+  .john{
+    text-align: center;
+  }
+  #Celina{
+    border: 0px;
+  }

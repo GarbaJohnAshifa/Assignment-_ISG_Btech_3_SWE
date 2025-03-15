@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body>
+<link rel="stylesheet"  href="Admin.css">
+<br>
+<h2><b>Admin Dashboard - Login<b></h2>
+    <form action="login.php" method="post" id="login-form">
+<p>Email:</p>
+<br>
+<input type="email" id="email" name="email" placeholder="user@gmail.com">
+<br>
+<br>
+<p>Password:</p>
+<br>
+<input type="password" id="password" name="password" placeholder="..........">
+<input type="hidden" name="user_type" value="Admin">
+<br>
+<br>
+<br>
+<p7>
+<input type="submit" value="Login">
+</p7>
+<br>
+</form>
+<h4 style="paddiing-right:135">Forget Password</h4>
+<br>
+
+<script>
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        // Perform an AJAX request to validate the login credentials
+        const xhr = new XMLHttpRequest();
+        xhr.open('POST', 'login.php', true);
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.onload = function() {
+            if (xhr.status === 200) {
+                const response = JSON.parse(xhr.responseText);
+                if (response.success) {
+                    // Save admin details in localStorage
+                    localStorage.setItem('adminName', response.adminName);
+                    localStorage.setItem('adminRole', response.adminRole);
+
+                    // Redirect to the dashboard
+                    window.location.href = 'dashboard.html';
+                } else {
+                    alert('Invalid login credentials.');
+                }
+            }
+        };
+        xhr.send(`email=${email}&password=${password}`);
+    });
+</script>
+
+
+</body>
+</html>
